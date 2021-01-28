@@ -67,6 +67,7 @@ let g:pymode_folding = 0
 let g:pymoe_doc = 0
 " let g:pymode_doc_bind = '?'
 let g:pymode_lint_on_fly = 0
+let g:pymode_lint_on_write = 0
 let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_length}
 let completeopt = 'menuone,noinsert'
 let g:pymode_rope = 1
