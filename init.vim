@@ -38,7 +38,7 @@ set secure
 "=====================================================
 au FileType tex,latex set noexpandtab
 au BufNewFile,BufRead *.tex set noexpandtab
-au FileType javascript,javascriptreact set tabstop=2 shiftwidth=2
+au FileType html,javascript,javascriptreact set tabstop=2 shiftwidth=2
 au FileType javascriptreact runtime ftplugin/html/sparkup.vim
 
 
