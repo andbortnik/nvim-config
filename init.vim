@@ -122,7 +122,17 @@ nnoremap <Leader>vr :source $MYVIMRC<CR>
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pc :PlugClean<CR>
 " NERDTree
-nnoremap <F3> :NERDTreeToggle<CR>
+function MyNerdToggle()
+    if exists("g:NERDTree") && g:NERDTree.IsOpen()
+        NERDTreeClose
+    elseif filereadable(expand('%'))
+        NERDTreeFind
+    else
+        NERDTree
+    endif
+endfunction
+
+nnoremap <F3> :call MyNerdToggle()<CR>
 let NERDTreeQuitOnOpen=1
 let NERDTreeMinimalUI=1
 " Copy to system clipboard
