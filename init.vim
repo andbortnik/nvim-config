@@ -118,6 +118,8 @@ nnoremap <Leader>s :w<CR>
 " edit vim config
 nnoremap <Leader>ve :e $MYVIMRC<CR>
 nnoremap <Leader>vr :source $MYVIMRC<CR>
+" open terminal
+nnoremap <Leader>t <C-w>s <C-w>j :terminal<CR>i
 " plug
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pc :PlugClean<CR>
