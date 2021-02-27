@@ -47,8 +47,7 @@ au FileType javascriptreact runtime ftplugin/html/sparkup.vim
 "=====================================================
 " colorscheme
 autocmd vimenter * ++nested colorscheme gruvbox
-autocmd vimenter * ++nested colorscheme vimterial
-let g:gruvbox_contrast_dark="soft"
+let g:gruvbox_contrast_dark="medium"
 " jedi-vim
 let g:jedi#environment_path = $VIRTUAL_ENV
 let g:jedi#smart_auto_mappings = 1
