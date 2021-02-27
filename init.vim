@@ -169,6 +169,8 @@ nnoremap <Leader>J :Join ' ' -1<CR>k
 nnoremap <Leader>s :SplitLine<CR>
 " undotree
 nnoremap <F5> :UndotreeToggle<CR>:UndotreeFocus<CR>
+" pymode-lint
+nnoremap <Leader>l :PymodeLint<CR>
 
 
 "=====================================================
