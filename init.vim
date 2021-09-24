@@ -51,7 +51,6 @@ let g:gruvbox_contrast_dark="medium"
 " jedi-vim
 let g:jedi#environment_path = $VIRTUAL_ENV
 let g:jedi#smart_auto_mappings = 1
-let g:jedi#documentation_command = '?'
 autocmd FileType python setlocal completeopt-=preview
 " deoplete
 let g:deoplete#enable_at_startup = 1
@@ -64,7 +63,6 @@ let g:pymode = 1
 let g:pymode_options_max_line_length = 119
 let g:pymode_folding = 0
 let g:pymode_doc = 0
-" let g:pymode_doc_bind = '?'
 let g:pymode_lint_on_fly = 0
 let g:pymode_lint_on_write = 0
 let g:pymode_lint_options_pep8 = {'max_line_length': g:pymode_options_max_line_length}
