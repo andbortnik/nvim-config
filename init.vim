@@ -144,8 +144,8 @@ nnoremap <Leader>p "0p
 vnoremap <Leader>p "0p
 nnoremap <Leader>h viw"0p
 " Move lines up and down
-nnoremap J :m .+1<CR>==
-nnoremap K :m .-2<CR>==
+"nnoremap J :m .+1<CR>==
+"nnoremap K :m .-2<CR>==
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 " Shift 
