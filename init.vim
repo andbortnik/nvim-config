@@ -101,7 +101,7 @@ inoremap <M-0> <Home>
 " buffers
 noremap <M-k> :bp<CR>
 noremap <M-j> :bn<CR> 
-nnoremap <M-q> :bd<CR>
+nnoremap <M-q> :bp<CR>:bd #<CR>
 " windows
 nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
@@ -155,6 +155,7 @@ nnoremap <Leader>ft :Tags<CR>
 nnoremap <Leader>fb :Buffers<CR>
 nnoremap <Leader>fh :History<CR>
 nnoremap <Leader>fm :Maps<CR>
+nnoremap <Leader>fg :GF?<CR>
 " jedi-vim
 imap <C-j> <C-n>
 imap <C-k> <C-p>
