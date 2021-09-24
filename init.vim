@@ -192,8 +192,8 @@ Plug 'ervandew/supertab'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-jedi'
 " git
-Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'mhinz/vim-signify'
 " editing
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
