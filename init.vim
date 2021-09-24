@@ -134,8 +134,8 @@ function MyNerdToggle()
 endfunction
 
 nnoremap <F3> :call MyNerdToggle()<CR>
-let NERDTreeQuitOnOpen=1
-let NERDTreeMinimalUI=1
+let NERDTreeQuitOnOpen=0
+let NERDTreeMinimalUI=0
 " Copy to system clipboard
 vnoremap <C-c> "+y
 " Paste from system clipboard with Ctrl + v
