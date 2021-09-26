@@ -204,6 +204,7 @@ Plug 'drzel/vim-split-line'
 Plug 'alvan/vim-closetag'
 Plug 'inkarkat/vim-ReplaceWithRegister'
 Plug 'christoomey/vim-sort-motion'
+Plug 'christoomey/vim-system-copy'
 " html
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 " NERDTree
