@@ -201,7 +201,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'sk1418/Join'
 Plug 'drzel/vim-split-line'
-Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 " html
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
