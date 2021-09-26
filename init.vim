@@ -202,6 +202,8 @@ Plug 'tpope/vim-commentary'
 Plug 'sk1418/Join'
 Plug 'drzel/vim-split-line'
 Plug 'alvan/vim-closetag'
+Plug 'inkarkat/vim-ReplaceWithRegister'
+Plug 'christoomey/vim-sort-motion'
 " html
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 " NERDTree
