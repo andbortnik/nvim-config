@@ -156,6 +156,8 @@ nnoremap <Leader>fb :Buffers<CR>
 nnoremap <Leader>fh :History<CR>
 nnoremap <Leader>fm :Maps<CR>
 nnoremap <Leader>fg :GF?<CR>
+nnoremap <Leader>fr :Rg<CR>
+nnoremap <C-p> :GFiles<CR>
 " jedi-vim
 imap <C-j> <C-n>
 imap <C-k> <C-p>
