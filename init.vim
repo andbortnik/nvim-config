@@ -172,6 +172,8 @@ nnoremap <Leader>s :SplitLine<CR>
 nnoremap <F5> :UndotreeToggle<CR>:UndotreeFocus<CR>
 " pymode-lint
 nnoremap <Leader>l :PymodeLint<CR>
+" autosave
+let g:auto_save = 0
 
 
 "=====================================================
