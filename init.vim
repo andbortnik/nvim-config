@@ -20,6 +20,7 @@ set list
 set nowrap
 set ignorecase
 set smartcase
+set updatetime=400
 let g:python_host_prog = '/usr/bin/python2'
 let g:python3_host_prog = '/usr/bin/python3'
 let mapleader=","
@@ -87,6 +88,8 @@ let g:gutentags_enabled = 1
 let g:auto_save = 1
 " vim-closetag
 let g:closetag_filetypes = 'html,xhtml,phtml,javascript'
+" vim-signify
+let g:signify_line_highlight = 0
 
 
 "=====================================================
@@ -176,7 +179,20 @@ nnoremap <Leader>l :PymodeLint<CR>
 let g:auto_save = 0
 " lens
 let g:lens#width_resize_max = 120
-
+" signify
+nmap gj <plug>(signify-next-hunk)
+nmap gk <plug>(signify-prev-hunk)
+nnoremap <Leader>gd :SignifyDiff<CR>
+nnoremap <Leader>gp :SignifyHunkDiff<CR>
+nnoremap <Leader>gu :SignifyHunkUndo<CR>
+" signify show hunks
+autocmd User SignifyHunk call s:show_current_hunk()
+function! s:show_current_hunk() abort
+  let h = sy#util#get_hunk_stats()
+  if !empty(h)
+    echo printf('[Hunk %d/%d]', h.current_hunk, h.total_hunks)
+  endif
+endfunction
 
 "=====================================================
 " Plugins
