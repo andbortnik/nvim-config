@@ -174,6 +174,8 @@ nnoremap <F5> :UndotreeToggle<CR>:UndotreeFocus<CR>
 nnoremap <Leader>l :PymodeLint<CR>
 " autosave
 let g:auto_save = 0
+" lens
+let g:lens#width_resize_max = 120
 
 
 "=====================================================
@@ -189,6 +191,7 @@ Plug 'jackiehluo/vim-material'
 Plug 'larsbs/vimtom'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'camspiers/lens.vim'
 " autocomplete
 Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
