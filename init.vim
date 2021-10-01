@@ -48,7 +48,14 @@ au FileType javascriptreact runtime ftplugin/html/sparkup.vim
 "=====================================================
 " colorscheme
 autocmd vimenter * ++nested colorscheme gruvbox
-let g:gruvbox_contrast_dark="medium"
+" gruvbox
+let g:gruvbox_bold = 0
+let g:gruvbox_contrast_dark = "medium"
+let g:gruvbox_invert_signs = 1
+function! GruvboxUpdateColors()
+    hi! link Function GruvboxAqua
+endfunction
+autocmd ColorScheme * call GruvboxUpdateColors()
 " jedi-vim
 let g:jedi#environment_path = $VIRTUAL_ENV
 let g:jedi#smart_auto_mappings = 1
@@ -76,8 +83,8 @@ let g:pymode_rope_autoimport = 1
 let g:pymode_rope_autoimport_import_after_complete = 1
 let g:pymode_rope_goto_definition_bind = 'gd'
 let g:pymode_rope_goto_definition_cmd = 'edit'
-let g:pymode_syntax = 1
-let g:pymode_syntax_all = 1
+let g:pymode_syntax = 0
+let g:pymode_syntax_all = 0
 " python-syntax
 let g:python_highlight_all = 0
 let g:python_highlight_builtins = 1
@@ -199,15 +206,20 @@ endfunction
 "=====================================================
 call plug#begin('~/.local/share/nvim/plugged')
 " appearance
-Plug 'morhetz/gruvbox'
-Plug 'larsbs/vimterial_dark'
-Plug 'mhartington/oceanic-next'
-Plug 'larsbs/vimterial'
-Plug 'jackiehluo/vim-material'
-Plug 'larsbs/vimtom'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'camspiers/lens.vim'
+" colorschemes
+Plug 'sainnhe/sonokai'
+Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'
+Plug 'tanvirtin/monokai.nvim'
+Plug 'matsuuu/pinkmare'
+Plug 'Mofiqul/dracula.nvim'
+Plug 'briemens/gruvbox'
+Plug 'larsbs/vimterial_dark'
+Plug 'mhartington/oceanic-next'
+" syntax
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " autocomplete
 Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
@@ -256,3 +268,15 @@ Plug '907th/vim-auto-save'
 Plug 'powerman/vim-plugin-ruscmd'
 
 call plug#end()
+
+" nvim-treesitter
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+    ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+    ignore_install = {}, -- List of parsers to ignore installing
+    highlight = {
+      enable = true,              -- false will disable the whole extension
+      disable = { "c", "rust" },  -- list of language that will be disabled
+    },
+}
+EOF
