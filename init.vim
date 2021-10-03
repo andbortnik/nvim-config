@@ -97,6 +97,8 @@ let g:auto_save = 1
 let g:closetag_filetypes = 'html,xhtml,phtml,javascript'
 " vim-signify
 let g:signify_line_highlight = 0
+" nvim-tree-lua
+let g:nvim_tree_highlight_opened_files = 1
 
 
 "=====================================================
@@ -130,20 +132,9 @@ nnoremap <Leader>t <C-w>s <C-w>j :terminal<CR>i
 " plug
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pc :PlugClean<CR>
-" NERDTree
-function MyNerdToggle()
-    if exists("g:NERDTree") && g:NERDTree.IsOpen()
-        NERDTreeClose
-    elseif filereadable(expand('%'))
-        NERDTreeFind
-    else
-        NERDTree
-    endif
-endfunction
-
-nnoremap <F3> :call MyNerdToggle()<CR>
-let NERDTreeQuitOnOpen=0
-let NERDTreeMinimalUI=0
+" nvim-tree-lua
+nnoremap <F3> :NvimTreeToggle<CR>
+highlight NvimTreeFolderIcon guibg=blue
 " Copy to system clipboard
 vnoremap <C-c> "+y
 " Paste from system clipboard with Ctrl + v
@@ -240,12 +231,9 @@ Plug 'christoomey/vim-sort-motion'
 Plug 'christoomey/vim-system-copy'
 " html
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
-" NERDTree
-Plug 'preservim/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'scrooloose/nerdtree-project-plugin'
+" nvim-tree-lua
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 " FZF
 Plug 'junegunn/fzf', { 'do': './install --all && ln -sf $(pwd) ~/.fzf'}
 Plug 'junegunn/fzf.vim'
@@ -295,6 +283,17 @@ monokai.setup {
         TSParameterReference = {
             fg = palette.orange,
         }
+    }
+}
+EOF
+
+" nvim-tree-lua
+lua << EOF
+require'nvim-tree'.setup {
+    update_focused_file = {
+        enable = true,
+        update_cwd = false,
+        ignore_list = {}
     }
 }
 EOF
