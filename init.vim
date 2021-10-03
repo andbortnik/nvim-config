@@ -47,7 +47,7 @@ au FileType javascriptreact runtime ftplugin/html/sparkup.vim
 " Plugin settings
 "=====================================================
 " colorscheme
-autocmd vimenter * ++nested colorscheme gruvbox
+autocmd vimenter * ++nested colorscheme monokai
 " gruvbox
 let g:gruvbox_bold = 0
 let g:gruvbox_contrast_dark = "medium"
