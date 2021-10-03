@@ -189,6 +189,13 @@ function! s:show_current_hunk() abort
     echo printf('[Hunk %d/%d]', h.current_hunk, h.total_hunks)
   endif
 endfunction
+" Pytest
+nmap <Leader>tp :Pytest project -n=auto
+nmap <Leader>tf :Pytest file
+nmap <Leader>tc :Pytest class
+nmap <Leader>tm :Pytest method
+nmap <Leader>tf :Pytest function
+nmap <Leader>ts :Pytest session<CR>
 
 "=====================================================
 " Plugins
@@ -237,6 +244,8 @@ Plug 'junegunn/fzf', { 'do': './install --all && ln -sf $(pwd) ~/.fzf'}
 Plug 'junegunn/fzf.vim'
 " Python
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+" Pytest
+Plug 'alfredodeza/pytest.vim'
 " JS
 Plug 'neoclide/vim-jsx-improve'
 " TaTeX
