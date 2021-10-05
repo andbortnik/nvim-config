@@ -1,3 +1,4 @@
+lua require('plugin')
 "=====================================================
 " Common settings
 "=====================================================
@@ -42,7 +43,6 @@ au BufNewFile,BufRead *.tex set noexpandtab
 au FileType html,javascript,javascriptreact set tabstop=2 shiftwidth=2
 au FileType javascriptreact runtime ftplugin/html/sparkup.vim
 
-
 "=====================================================
 " Plugin settings
 "=====================================================
@@ -56,6 +56,7 @@ function! GruvboxUpdateColors()
     hi! link Function GruvboxAqua
 endfunction
 autocmd ColorScheme gruvbox call GruvboxUpdateColors()
+autocmd ColorScheme monokai call v:lua.setup_monokai()
 " jedi-vim
 let g:jedi#environment_path = $VIRTUAL_ENV
 let g:jedi#smart_auto_mappings = 1
@@ -250,24 +251,6 @@ require'nvim-treesitter.configs'.setup {
     },
 }
 EOF
-
-" monokai
-" lua << EOF
-" local monokai = require('monokai')
-" local palette = monokai.classic
-" monokai.setup {
-"     palette = {
-"     },
-"     custom_hlgroups = {
-"         TSParameter = {
-"             fg = palette.orange,
-"         },
-"         TSParameterReference = {
-"             fg = palette.orange,
-"         }
-"     }
-" }
-" EOF
 
 " nvim-tree-lua
 lua << EOF
