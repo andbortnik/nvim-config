@@ -47,7 +47,7 @@ au FileType javascriptreact runtime ftplugin/html/sparkup.vim
 " Plugin settings
 "=====================================================
 " colorscheme
-autocmd vimenter * ++nested colorscheme monokai
+autocmd vimenter * ++nested colorscheme gruvbox
 " gruvbox
 let g:gruvbox_bold = 0
 let g:gruvbox_contrast_dark = "medium"
@@ -55,7 +55,7 @@ let g:gruvbox_invert_signs = 1
 function! GruvboxUpdateColors()
     hi! link Function GruvboxAqua
 endfunction
-autocmd ColorScheme * call GruvboxUpdateColors()
+autocmd ColorScheme gruvbox call GruvboxUpdateColors()
 " jedi-vim
 let g:jedi#environment_path = $VIRTUAL_ENV
 let g:jedi#smart_auto_mappings = 1
@@ -188,7 +188,7 @@ Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'matsuuu/pinkmare'
 Plug 'Mofiqul/dracula.nvim'
-Plug 'briemens/gruvbox'
+Plug 'morhetz/gruvbox'
 Plug 'larsbs/vimterial_dark'
 Plug 'mhartington/oceanic-next'
 " syntax
@@ -252,22 +252,22 @@ require'nvim-treesitter.configs'.setup {
 EOF
 
 " monokai
-lua << EOF
-local monokai = require('monokai')
-local palette = monokai.classic
-monokai.setup {
-    palette = {
-    },
-    custom_hlgroups = {
-        TSParameter = {
-            fg = palette.orange,
-        },
-        TSParameterReference = {
-            fg = palette.orange,
-        }
-    }
-}
-EOF
+" lua << EOF
+" local monokai = require('monokai')
+" local palette = monokai.classic
+" monokai.setup {
+"     palette = {
+"     },
+"     custom_hlgroups = {
+"         TSParameter = {
+"             fg = palette.orange,
+"         },
+"         TSParameterReference = {
+"             fg = palette.orange,
+"         }
+"     }
+" }
+" EOF
 
 " nvim-tree-lua
 lua << EOF
