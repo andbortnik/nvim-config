@@ -7,6 +7,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'camspiers/lens.vim'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'simeji/winresizer'
 " colorschemes
 Plug 'sainnhe/sonokai'
 Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'
