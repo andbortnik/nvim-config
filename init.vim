@@ -17,6 +17,7 @@ Plug 'Mofiqul/dracula.nvim'
 Plug 'morhetz/gruvbox'
 Plug 'larsbs/vimterial_dark'
 Plug 'mhartington/oceanic-next'
+Plug 'folke/lsp-colors.nvim'
 " syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " git
