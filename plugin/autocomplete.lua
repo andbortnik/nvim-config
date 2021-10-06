@@ -26,11 +26,11 @@ cmp.setup({
     snippet = {},
     mapping = {
         ['<C-Space>'] = cmp.mapping.complete(),
-        ['<CR>'] = cmp.mapping.confirm({ select = true }),
+        --['<CR>'] = cmp.mapping.confirm({ select = true }),
     },
     completion = {
         autocomplete = true,
-        completeopt = 'menu,menuone,noinsert',
+        completeopt = 'menu,menuone,preview,noinsert,noselect',
     },
     sources = {
         {
