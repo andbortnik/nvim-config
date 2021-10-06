@@ -35,10 +35,11 @@ cmp.setup({
     sources = {
         {
             name = 'nvim_lsp',
-            max_item_count = 10,
+            max_item_count = 5,
         },
         {
-            name = 'tags'
+            name = 'tags',
+            max_item_count = 5,
         },
     },
     formatting = {
