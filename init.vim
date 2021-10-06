@@ -21,7 +21,8 @@ Plug 'mhartington/oceanic-next'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " git
 Plug 'tpope/vim-fugitive'
-Plug 'mhinz/vim-signify'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'lewis6991/gitsigns.nvim'
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -144,7 +145,6 @@ vnoremap <C-c> "+y
 inoremap <C-v> <Esc>"+p
 nnoremap <Leader>p "0p
 vnoremap <Leader>p "0p
-nnoremap <Leader>h viw"0p
 " Move lines up and down
 "nnoremap J :m .+1<CR>==
 "nnoremap K :m .-2<CR>==
