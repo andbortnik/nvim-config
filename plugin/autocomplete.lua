@@ -30,7 +30,7 @@ cmp.setup({
     },
     completion = {
         autocomplete = true,
-        completeopt = 'menu,menuone,preview,noinsert,noselect',
+        completeopt = 'menuone,noselect',
     },
     sources = {
         {
