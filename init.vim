@@ -6,6 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'camspiers/lens.vim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 " colorschemes
 Plug 'sainnhe/sonokai'
 Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'
