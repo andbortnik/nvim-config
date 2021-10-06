@@ -189,3 +189,7 @@ nmap <Leader>ts :Pytest session<CR>
 " leader-guide
 nnoremap <silent> <leader> :<c-u>LeaderGuide ','<CR>
 vnoremap <silent> <leader> :<c-u>LeaderGuideVisual ','<CR>
+" lsp
+nnoremap <Leader>li :LspInfo<CR>
+nnoremap <Leader>lr :LspStart<CR>
+nnoremap <Leader>ls :LspStop<CR>
