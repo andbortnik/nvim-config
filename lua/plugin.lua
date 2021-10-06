@@ -1,9 +1,8 @@
-function _G.setup_monokai()
+function _G.setup_monokai(palette_name)
     local monokai = require('monokai')
-    local palette = monokai.classic
+    local palette = monokai[palette_name]
     monokai.setup {
-        palette = {
-        },
+        palette = palette,
         custom_hlgroups = {
             TSParameter = {
                 fg = palette.orange,
