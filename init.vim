@@ -154,12 +154,13 @@ vnoremap K :m '<-2<CR>gv=gv
 vnoremap > >gv
 vnoremap < <gv
 " FZF
-nnoremap <Leader>ff :Files<CR>
+nnoremap <Leader>ff :GitFiles<CR>
+nnoremap <Leader>fF :Files<CR>
+nnoremap <Leader>fg :GitFiles?<CR>
 nnoremap <Leader>ft :Tags<CR>
 nnoremap <Leader>fb :Buffers<CR>
 nnoremap <Leader>fh :History<CR>
 nnoremap <Leader>fm :Maps<CR>
-nnoremap <Leader>fg :GF?<CR>
 nnoremap <Leader>fr :Rg<CR>
 nnoremap <C-p> :GFiles<CR>
 " autocomplete
@@ -184,7 +185,7 @@ nnoremap <Leader>gp :SignifyHunkDiff<CR>
 nnoremap <Leader>gu :SignifyHunkUndo<CR>
 " Pytest
 nmap <Leader>tp :Pytest project -n=auto
-nmap <Leader>tf :Pytest file
+nmap <Leader>tF :Pytest file
 nmap <Leader>tc :Pytest class
 nmap <Leader>tm :Pytest method
 nmap <Leader>tf :Pytest function
