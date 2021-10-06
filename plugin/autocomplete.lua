@@ -26,7 +26,7 @@ cmp.setup({
     snippet = {},
     mapping = {
         ['<C-Space>'] = cmp.mapping.complete(),
-        --['<CR>'] = cmp.mapping.confirm({ select = true }),
+        ['<CR>'] = cmp.mapping.confirm(),
     },
     completion = {
         autocomplete = true,
@@ -36,6 +36,9 @@ cmp.setup({
         {
             name = 'nvim_lsp',
             max_item_count = 10,
+        },
+        {
+            name = 'tags'
         },
     },
     formatting = {
@@ -49,6 +52,7 @@ cmp.setup({
           luasnip = "[LuaSnip]",
           nvim_lua = "[Lua]",
           latex_symbols = "[Latex]",
+          tags = "[tags]",
         })[entry.source.name]
         return vim_item
       end,
