@@ -98,6 +98,7 @@ set undolevels=1000
 set undoreload=10000
 set exrc
 set secure
+set colorcolumn=120
 
 "=====================================================
 " File specific settings
