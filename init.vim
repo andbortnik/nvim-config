@@ -178,12 +178,6 @@ nnoremap <Leader>s :SplitLine<CR>
 nnoremap <F5> :UndotreeToggle<CR>:UndotreeFocus<CR>
 " pymode-lint
 nnoremap <Leader>l :PymodeLint<CR>
-" signify
-nmap gj <plug>(signify-next-hunk)
-nmap gk <plug>(signify-prev-hunk)
-nnoremap <Leader>gd :SignifyDiff<CR>
-nnoremap <Leader>gp :SignifyHunkDiff<CR>
-nnoremap <Leader>gu :SignifyHunkUndo<CR>
 " Pytest
 nmap <Leader>tp :Pytest project -n=auto
 nmap <Leader>tF :Pytest file
