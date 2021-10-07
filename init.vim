@@ -5,9 +5,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " appearance
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'camspiers/lens.vim'
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'simeji/winresizer'
 " colorschemes
 Plug 'sainnhe/sonokai'
 Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'
@@ -22,7 +20,10 @@ Plug 'folke/lsp-colors.nvim'
 " syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " tools
+Plug 'simeji/winresizer'
+Plug 'camspiers/lens.vim'
 Plug 'rktjmp/highlight-current-n.nvim'
+Plug 'dominikduda/vim_current_word'
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-lua/plenary.nvim'
