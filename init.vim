@@ -2,6 +2,10 @@
 " Plugins
 "=====================================================
 call plug#begin('~/.local/share/nvim/plugged')
+" common
+Plug 'nvim-lua/plenary.nvim'
+Plug 'tami5/sqlite.lua'
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
 " appearance
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -26,7 +30,6 @@ Plug 'rktjmp/highlight-current-n.nvim'
 Plug 'dominikduda/vim_current_word'
 " git
 Plug 'tpope/vim-fugitive'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim'
 " LSP
 Plug 'neovim/nvim-lspconfig'
@@ -47,9 +50,10 @@ Plug 'christoomey/vim-system-copy'
 " html
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 " nvim-tree-lua
-Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'kyazdani42/nvim-tree.lua'
-" FZF
+" fuzzy finders
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-frecency.nvim'
 Plug 'junegunn/fzf', { 'do': './install --all && ln -sf $(pwd) ~/.fzf'}
 Plug 'junegunn/fzf.vim'
 " Pytest
@@ -159,7 +163,8 @@ vnoremap K :m '<-2<CR>gv=gv
 " Shift 
 vnoremap > >gv
 vnoremap < <gv
-" FZF
+" fuzzy finders
+" ZFZ
 nnoremap <Leader>ff :GitFiles<CR>
 nnoremap <Leader>fF :Files<CR>
 nnoremap <Leader>fg :GitFiles?<CR>
@@ -170,6 +175,12 @@ nnoremap <Leader>fm :Maps<CR>
 nnoremap <Leader>fr :Rg<CR>
 nnoremap <Leader>fw :Windows<CR>
 nnoremap <C-p> :GFiles<CR>
+" telescope
+nnoremap <leader>FH <cmd>Telescope frecency<cr>
+nnoremap <leader>FF <cmd>Telescope find_files<cr>
+nnoremap <leader>FG <cmd>Telescope live_grep<cr>
+nnoremap <leader>FB <cmd>Telescope buffers<cr>
+nnoremap <leader>FH <cmd>Telescope help_tags<cr>
 " autocomplete
 imap <C-j> <C-n>
 imap <C-k> <C-p>
