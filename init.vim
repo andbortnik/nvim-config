@@ -165,6 +165,7 @@ nnoremap <Leader>fb :Buffers<CR>
 nnoremap <Leader>fh :History<CR>
 nnoremap <Leader>fm :Maps<CR>
 nnoremap <Leader>fr :Rg<CR>
+nnoremap <Leader>fw :Windows<CR>
 nnoremap <C-p> :GFiles<CR>
 " autocomplete
 imap <C-j> <C-n>
