@@ -21,6 +21,8 @@ Plug 'mhartington/oceanic-next'
 Plug 'folke/lsp-colors.nvim'
 " syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" tools
+Plug 'rktjmp/highlight-current-n.nvim'
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'nvim-lua/plenary.nvim'
