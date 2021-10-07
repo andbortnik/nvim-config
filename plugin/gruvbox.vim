@@ -6,6 +6,5 @@ function! GruvboxUpdateColors()
     hi! link TSOperator GruvboxRed
     hi! link TSKeywordOperator GruvboxRed
     hi! link TSKeywordFunction GruvboxRed
-    hi! link TSParameter GruvboxOrange
 endfunction
 autocmd ColorScheme gruvbox call GruvboxUpdateColors()
