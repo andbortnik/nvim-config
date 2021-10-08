@@ -19,6 +19,13 @@ local on_attach = function(client, bufnr)
     buf_set_keymap('n', '<Leader>e', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
     buf_set_keymap('n', '[d', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
     buf_set_keymap('n', ']d', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
+
+    vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+        virtual_text = true,
+        signs = false,
+        underline = false,
+        update_in_insert = true,
+    })
 end
 
 -- Setup nvim-cmp autocompletion
