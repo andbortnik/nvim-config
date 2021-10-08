@@ -10,7 +10,6 @@ Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'dstein64/nvim-scrollview'
 " colorschemes
 Plug 'sainnhe/sonokai'
 Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'
