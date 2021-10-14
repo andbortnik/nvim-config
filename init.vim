@@ -174,6 +174,26 @@ nnoremap <Leader>fm :Maps<CR>
 nnoremap <Leader>fr :Rg<CR>
 nnoremap <Leader>fw :Windows<CR>
 nnoremap <C-p> :GFiles<CR>
+
+function! s:getVisualSelection()
+    let [line_start, column_start] = getpos("'<")[1:2]
+    let [line_end, column_end] = getpos("'>")[1:2]
+    let lines = getline(line_start, line_end)
+
+    if len(lines) == 0
+        return ""
+    endif
+
+    let lines[-1] = lines[-1][:column_end - (&selection == "inclusive" ? 1 : 2)]
+    let lines[0] = lines[0][column_start - 1:]
+
+    return join(lines, "\n")
+endfunction
+
+vnoremap <silent><leader>ff <Esc>:GitFiles <C-R>=<SID>getVisualSelection()<CR><CR>
+vnoremap <silent><leader>fF <Esc>:Files <C-R>=<SID>getVisualSelection()<CR><CR>
+vnoremap <silent><leader>ft <Esc>:Tags <C-R>=<SID>getVisualSelection()<CR><CR>
+vnoremap <silent><leader>fr <Esc>:Rg <C-R>=<SID>getVisualSelection()<CR><CR>
 " telescope
 nnoremap <leader>FH <cmd>Telescope frecency<cr>
 nnoremap <leader>FF <cmd>Telescope find_files<cr>
