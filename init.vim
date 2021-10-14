@@ -163,7 +163,7 @@ vnoremap K :m '<-2<CR>gv=gv
 vnoremap > >gv
 vnoremap < <gv
 " fuzzy finders
-" ZFZ
+" FZF 
 nnoremap <Leader>ff :GitFiles<CR>
 nnoremap <Leader>fF :Files<CR>
 nnoremap <Leader>fg :GitFiles?<CR>
