@@ -220,7 +220,7 @@ nmap <Leader>tF :Pytest file
 nmap <Leader>tc :Pytest class
 nmap <Leader>tm :Pytest method
 nmap <Leader>tf :Pytest function
-nmap <Leader>ts :Pytest session<CR>
+nmap <F4> :Pytest session<CR>
 " leader-guide
 nnoremap <silent> <leader> :<c-u>LeaderGuide ','<CR>
 vnoremap <silent> <leader> :<c-u>LeaderGuideVisual ','<CR>
