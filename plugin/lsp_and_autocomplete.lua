@@ -34,6 +34,20 @@ cmp.setup({
     mapping = {
         ['<C-Space>'] = cmp.mapping.complete(),
         ['<CR>'] = cmp.mapping.confirm(),
+        ['<C-j>'] = function(fallback)
+            if cmp.visible() then
+                cmp.select_next_item()
+            else
+                fallback()
+           end
+        end,
+        ['<C-k>'] = function(fallback)
+            if cmp.visible() then
+                cmp.select_prev_item()
+            else
+                fallback()
+           end
+        end
     },
     completion = {
         autocomplete = true,
