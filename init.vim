@@ -12,7 +12,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'lukas-reineke/indent-blankline.nvim'
 " colorschemes
 Plug 'sainnhe/sonokai'
-Plug 'https://git.sr.ht/~novakane/kosmikoa.nvim'
 Plug 'tanvirtin/monokai.nvim'
 Plug 'matsuuu/pinkmare'
 Plug 'Mofiqul/dracula.nvim'
@@ -83,6 +82,7 @@ call plug#end()
 " Common settings
 "=====================================================
 autocmd vimenter * ++nested colorscheme gruvbox
+colorscheme gruvbox
 set expandtab
 set tabstop=4
 set shiftwidth=4
