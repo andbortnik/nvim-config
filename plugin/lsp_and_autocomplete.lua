@@ -82,14 +82,28 @@ cmp.setup({
 })
 
 -- Setup language servers
-local capabilities = vim.lsp.protocol.make_client_capabilities()
-local servers = { 'pyright' }
-for _, lsp in ipairs(servers) do
-    lspconfig[lsp].setup {
-        on_attach = on_attach,
-        capabilities = cmp_nvim_lsp.update_capabilities(capabilities),
-        flags = {
-            debounce_text_changes = 150,
+lspconfig.pyright.setup {
+    on_attach = on_attach,
+    capabilities = cmp_nvim_lsp.update_capabilities(vim.lsp.protocol.make_client_capabilities()),
+    flags = {
+        debounce_text_changes = 150,
+    }
+}
+
+lspconfig['rust_analyzer'].setup({
+    on_attach=on_attach,
+    settings = {
+        ["rust-analyzer"] = {
+            assist = {
+                importGranularity = "module",
+                importPrefix = "self",
+            },
+            cargo = {
+                loadOutDirsFromCheck = true
+            },
+            procMacro = {
+                enable = true
+            },
         }
     }
-end
+})

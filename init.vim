@@ -72,7 +72,6 @@ Plug '907th/vim-auto-save'
 " russian layout
 Plug 'powerman/vim-plugin-ruscmd'
 " rust tools
-Plug 'neovim/nvim-lspconfig'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'mfussenegger/nvim-dap'
