@@ -146,6 +146,17 @@ nnoremap <Leader>s :w<CR>
 " edit vim config
 nnoremap <Leader>ve :e $MYVIMRC<CR>
 nnoremap <Leader>vr :source $MYVIMRC<CR>
+" lsp
+nnoremap gd :lua vim.lsp.buf.definition()<CR>
+nnoremap gD :lua vim.lsp.buf.implementation()<CR>
+nnoremap <Leader>k :lua vim.lsp.buf.hover()<CR>
+nnoremap <Leader>K :lua vim.lsp.buf.signature_help()<CR>
+nnoremap <Leader>r :lua vim.lsp.buf.rename()<CR>
+nnoremap gr :lua vim.lsp.buf.references()<CR>
+nnoremap <Leader>e :lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
+nnoremap g[ :lua vim.lsp.diagnostic.goto_prev()<CR>
+nnoremap g] :lua vim.lsp.diagnostic.goto_next()<CR>
+nnoremap ga :lua vim.lsp.buf.code_action()<CR>
 " plug
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pc :PlugClean<CR>
