@@ -111,6 +111,7 @@ set undoreload=10000
 set exrc
 set secure
 set colorcolumn=120
+set clipboard+=unnamedplus
 
 "=====================================================
 " File specific settings
