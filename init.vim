@@ -10,6 +10,7 @@ Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'xiyaowong/nvim-transparent'
 " colorschemes
 Plug 'sainnhe/sonokai'
 Plug 'tanvirtin/monokai.nvim'
