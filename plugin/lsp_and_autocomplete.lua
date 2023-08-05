@@ -24,7 +24,7 @@ cmp.setup({
         end
     },
     completion = {
-        autocomplete = true,
+        autocomplete = { require('cmp.types').cmp.TriggerEvent.TextChanged },
         completeopt = 'menuone,noselect',
     },
     sources = {
