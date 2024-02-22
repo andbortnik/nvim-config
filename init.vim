@@ -20,7 +20,6 @@ Plug 'rktjmp/lush.nvim'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'larsbs/vimterial_dark'
 Plug 'mhartington/oceanic-next'
-Plug 'folke/lsp-colors.nvim'
 " syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " tools
@@ -39,6 +38,8 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'quangnguyen30192/cmp-nvim-tags'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'folke/trouble.nvim'
+Plug 'folke/lsp-colors.nvim'
 " editing
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
