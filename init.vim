@@ -162,6 +162,9 @@ nnoremap <Leader>e :lua vim.lsp.diagnostic.show_line_diagnostics()<CR>
 nnoremap g[ :lua vim.lsp.diagnostic.goto_prev()<CR>
 nnoremap g] :lua vim.lsp.diagnostic.goto_next()<CR>
 nnoremap ga :lua vim.lsp.buf.code_action()<CR>
+" folding
+nnoremap <C-]> :foldopen<CR>
+nnoremap <C-[> :foldclose<CR>
 " plug
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pc :PlugClean<CR>
