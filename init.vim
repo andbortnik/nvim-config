@@ -79,6 +79,8 @@ Plug 'powerman/vim-plugin-ruscmd'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'mfussenegger/nvim-dap'
+" motions
+Plug 'chrisgrieser/nvim-spider'
 call plug#end()
 
 "=====================================================
