@@ -40,6 +40,7 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'folke/trouble.nvim'
 Plug 'folke/lsp-colors.nvim'
+Plug 'dgagn/diagflow.nvim'
 " editing
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
