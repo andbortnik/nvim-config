@@ -33,7 +33,6 @@ Plug 'lewis6991/gitsigns.nvim'
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'quangnguyen30192/cmp-nvim-tags'
 Plug 'williamboman/mason.nvim'
