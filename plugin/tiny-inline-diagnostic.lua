@@ -1,5 +1,3 @@
-vim.diagnostic.config({ virtual_text = false })
-
 -- Default configuration
 require("tiny-inline-diagnostic").setup({
 	preset = "powerline", -- Can be: "modern", "classic", "minimal", "powerline", ghost", "simple", "nonerdfont", "amongus"
