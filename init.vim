@@ -39,8 +39,9 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'folke/trouble.nvim'
 Plug 'folke/lsp-colors.nvim'
-Plug 'dgagn/diagflow.nvim'
 Plug 'ray-x/lsp_signature.nvim'
+" diagnostic
+Plug 'rachartier/tiny-inline-diagnostic.nvim'
 " editing
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
