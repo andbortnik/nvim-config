@@ -85,6 +85,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'mfussenegger/nvim-dap'
 " motions
 Plug 'chrisgrieser/nvim-spider'
+" performance
+Plug 'pteroctopus/faster.nvim'
 call plug#end()
 
 "=====================================================
