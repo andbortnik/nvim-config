@@ -18,6 +18,7 @@ Plug 'matsuuu/pinkmare'
 Plug 'Mofiqul/dracula.nvim'
 Plug 'rktjmp/lush.nvim'
 Plug 'ellisonleao/gruvbox.nvim'
+Plug 'sainnhe/gruvbox-material'
 Plug 'larsbs/vimterial_dark'
 Plug 'mhartington/oceanic-next'
 Plug 'navarasu/onedark.nvim'
@@ -89,7 +90,7 @@ call plug#end()
 "=====================================================
 " Common settings
 "=====================================================
-colorscheme onedark
+au vimenter * ++nested colorscheme gruvbox-material
 set expandtab
 set tabstop=4
 set shiftwidth=4
