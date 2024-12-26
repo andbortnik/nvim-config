@@ -95,7 +95,7 @@ call plug#end()
 "=====================================================
 " Common settings
 "=====================================================
-au vimenter * ++nested colorscheme gruvbox-material
+au vimenter * colorscheme gruvbox-material
 set expandtab
 set tabstop=4
 set shiftwidth=4
