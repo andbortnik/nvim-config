@@ -69,7 +69,7 @@ Plug 'lervag/vimtex'
 Plug 'mbbill/undotree'
 "tags
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'preservim/tagbar'
+Plug 'simrat39/symbols-outline.nvim'
 " other
 Plug 'andymass/vim-matchup'
 Plug 'spinks/vim-leader-guide'
@@ -206,7 +206,7 @@ nnoremap <Leader>fr :Rg<CR>
 nnoremap <Leader>fw :Windows<CR>
 nnoremap <C-p> :GFiles<CR>
 " tagbar
-nnoremap <F2> :TagbarToggle<CR>
+nnoremap <F2> :SymbolsOutline<CR>
 
 function! s:getVisualSelection()
     let [line_start, column_start] = getpos("'<")[1:2]
