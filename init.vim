@@ -55,8 +55,10 @@ Plug 'christoomey/vim-sort-motion'
 Plug 'christoomey/vim-system-copy'
 " html
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
-" nvim-tree-lua
-Plug 'kyazdani42/nvim-tree.lua'
+" file browser
+Plug 'nvim-neo-tree/neo-tree.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug '3rd/image.nvim'
 " fuzzy finders
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-frecency.nvim'
@@ -177,7 +179,7 @@ nnoremap <C-[> :foldclose<CR>
 nnoremap <Leader>pi :PlugInstall<CR>
 nnoremap <Leader>pc :PlugClean<CR>
 " nvim-tree-lua
-nnoremap <F3> :NvimTreeToggle<CR>
+nnoremap <F3> :Neotree toggle<CR>
 highlight NvimTreeFolderIcon guibg=blue
 " Copy to system clipboard
 vnoremap <C-c> "+y
