@@ -20,6 +20,7 @@ Plug 'rktjmp/lush.nvim'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'larsbs/vimterial_dark'
 Plug 'mhartington/oceanic-next'
+Plug 'navarasu/onedark.nvim'
 " syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " tools
@@ -88,8 +89,7 @@ call plug#end()
 "=====================================================
 " Common settings
 "=====================================================
-autocmd vimenter * ++nested colorscheme gruvbox
-colorscheme gruvbox
+colorscheme onedark
 set expandtab
 set tabstop=4
 set shiftwidth=4
