@@ -26,6 +26,7 @@ Plug 'dominikduda/vim_current_word'
 " git
 Plug 'tpope/vim-fugitive'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'tveskag/nvim-blame-line'
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
@@ -226,12 +227,8 @@ vnoremap <silent><leader>ff <Esc>:GitFiles <C-R>=<SID>getVisualSelection()<CR><C
 vnoremap <silent><leader>fF <Esc>:Files <C-R>=<SID>getVisualSelection()<CR><CR>
 vnoremap <silent><leader>ft <Esc>:Tags <C-R>=<SID>getVisualSelection()<CR><CR>
 vnoremap <silent><leader>fr <Esc>:Rg <C-R>=<SID>getVisualSelection()<CR><CR>
-" telescope
-nnoremap <leader>FH <cmd>Telescope frecency<cr>
-nnoremap <leader>FF <cmd>Telescope find_files<cr>
-nnoremap <leader>FG <cmd>Telescope live_grep<cr>
-nnoremap <leader>FB <cmd>Telescope buffers<cr>
-nnoremap <leader>FH <cmd>Telescope help_tags<cr>
+" git
+nnoremap <silent> <leader>b :ToggleBlameLine<CR>
 " autocomplete
 imap <C-j> <C-n>
 imap <C-k> <C-p>
