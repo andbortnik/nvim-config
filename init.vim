@@ -87,6 +87,7 @@ Plug 'mfussenegger/nvim-dap'
 Plug 'chrisgrieser/nvim-spider'
 " performance
 Plug 'pteroctopus/faster.nvim'
+Plug 'dstein64/vim-startuptime'
 call plug#end()
 
 "=====================================================
