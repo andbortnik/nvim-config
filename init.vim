@@ -13,14 +13,8 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'xiyaowong/nvim-transparent'
 " colorschemes
 Plug 'sainnhe/sonokai'
-Plug 'tanvirtin/monokai.nvim'
-Plug 'matsuuu/pinkmare'
-Plug 'Mofiqul/dracula.nvim'
-Plug 'rktjmp/lush.nvim'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'sainnhe/gruvbox-material'
-Plug 'larsbs/vimterial_dark'
-Plug 'mhartington/oceanic-next'
 Plug 'navarasu/onedark.nvim'
 " syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -95,7 +89,6 @@ call plug#end()
 "=====================================================
 " Common settings
 "=====================================================
-au vimenter * colorscheme gruvbox-material
 set expandtab
 set tabstop=4
 set shiftwidth=4
@@ -265,3 +258,5 @@ nnoremap <Leader>lr :LspStart<CR>
 nnoremap <Leader>ls :LspStop<CR>
 
 lua require('init')
+
+colorscheme gruvbox-material
