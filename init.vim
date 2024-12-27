@@ -16,6 +16,7 @@ Plug 'sainnhe/sonokai'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'sainnhe/gruvbox-material'
 Plug 'navarasu/onedark.nvim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 " syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " tools
@@ -260,4 +261,5 @@ nnoremap <Leader>ls :LspStop<CR>
 
 lua require('init')
 
-colorscheme gruvbox-material
+" catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
+colorscheme catppuccin-mocha
