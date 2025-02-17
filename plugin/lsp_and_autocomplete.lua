@@ -119,3 +119,15 @@ vim.api.nvim_create_autocmd("LspAttach", {
     require("lsp_signature").on_attach(signature_cfg, bufnr)
   end,
 })
+
+lspconfig.gopls.setup({
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+      gofumpt = true,
+    },
+  },
+})
