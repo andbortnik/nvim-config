@@ -258,6 +258,8 @@ vnoremap <silent> <leader> :<c-u>LeaderGuideVisual ','<CR>
 nnoremap <Leader>li :LspInfo<CR>
 nnoremap <Leader>lr :LspStart<CR>
 nnoremap <Leader>ls :LspStop<CR>
+nmap L $
+nmap H 0
 
 lua require('init')
 
