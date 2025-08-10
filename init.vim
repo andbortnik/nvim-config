@@ -10,13 +10,13 @@ Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'xiyaowong/nvim-transparent'
 " colorschemes
 Plug 'sainnhe/sonokai'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'sainnhe/gruvbox-material'
 Plug 'navarasu/onedark.nvim'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'folke/tokyonight.nvim'
 " syntax
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " tools
@@ -264,4 +264,4 @@ nmap H 0
 lua require('init')
 
 " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
-colorscheme catppuccin-mocha
+colorscheme tokyonight-moon
